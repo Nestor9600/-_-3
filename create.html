@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Новая публикация
+{% endblock %}
+{% block content %}
+<div class="container mt-5">
+    <h1>Добавление новой публикации</h1>
+    <form method="post">
+        <input type="text" name="title" id="title" class="form-control" placeholder="Название">
+        <br>
+        <textarea name="intro" id="intro" class="form-control" placeholder="Цена"></textarea>
+        <br>
+        <textarea name="text" id="text" class="form-control" placeholder="Ваши контакты (номер телефона, социальные сети)"></textarea>
+        <br>
+        <textarea name="text" id="text" class="form-control" placeholder="Описание предлагаемого товара"></textarea>
+        <br>
+        <div class="form-group">
+            <label for="photo">Приложите фотографию товара</label>
+            <input type="file" class="form-control-file" id="photo" name="file">
+        </div>
+        <input type="submit" class="btn btn-outline-info" value="Отправить">
+    </form>
+</div>
+{% endblock %}
